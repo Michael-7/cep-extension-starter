@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ExtensionManifest
+ExtensionBundleId="com.cepstarter"
+ExtensionBundleVersion="0.1.0"
+Version="6.0"
+ExtensionBundleName="Tutorial 1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Author>Code and Motion</Author>
+	<ExtensionList>
+		<Extension Id="com.cepstarter.panel" Version="1.0.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="AEFT" Version="18.4" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="9.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+<DispatchInfoList>
+	<Extension Id="com.cepstarter.panel">
+	<DispatchInfo>
+		<Resources>
+			<MainPath>./dist/index.html</MainPath>
+			<ScriptPath>./dist/extendscript/core.js</ScriptPath>
+			<CEFCommandLine>
+				<Parameter>--allow-file-access</Parameter>
+			</CEFCommandLine>
+		</Resources>
+		<Lifecycle>
+			<AutoVisible>true</AutoVisible>
+		</Lifecycle>
+		<UI>
+			<Type>Panel</Type>
+			<Menu>CEP Extension Starter</Menu>
+			<Geometry>
+				<Size>
+					<Height>300</Height>
+					<Width>350</Width>
+				</Size>
+				<MinSize>
+					<Height>300</Height>
+					<Width>350</Width>
+				</MinSize>
+			</Geometry>
+			<Icons />
+		</UI>
+	</DispatchInfo>
+	</Extension>
+</DispatchInfoList>
+</ExtensionManifest>

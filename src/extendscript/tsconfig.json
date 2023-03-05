@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"module": "none",
+		"target": "ES5",
+		"allowJs": true,
+		"types": [
+			"AfterEffects/22.0"
+		],
+		"typeRoots": [
+			"../../node_modules/types-for-adobe"
+		],
+		"outDir": "../../dist"
+	},
+	"include": ["./*"],
+	"exclude": []
+}

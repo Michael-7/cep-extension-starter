@@ -1,0 +1,62 @@
+@white: #c4c4c4;
+@background: #232323;
+@dark-color: #1D1D1D;
+@primary-green: #51E570;
+@primary-blue: #44EEF2;
+
+* {
+	&:focus-visible {
+		outline: none;
+		border-radius: 0;
+	}
+}
+
+body {
+	background-color: @background;
+}
+
+textarea {
+	background-color: #1D1D1D;
+	color: @white;
+	border-color: @white;
+
+	&:focus-visible {
+		border-color: @primary-green;
+	}
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+button {
+	background-color: @background;
+	border: 1px solid @white;
+	color: @white;
+	padding: 4px 16px 5px;
+	border-bottom: 2px solid @white;
+
+	&:hover {
+		background-color: rgba(@white, .1);
+		cursor: pointer;
+	}
+
+	&:active {
+		background-color: rgba(@white, .2);
+		border: 1px solid @primary-green;
+		margin-top: 1px;
+	}
+
+	&:focus-visible, &:active, &:focus {
+		border-radius: 0;
+		outline: none;
+	}
+}
+
+.example-image {
+	width: 60px;
+}
