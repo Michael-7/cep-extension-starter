@@ -3,7 +3,7 @@
 ExtensionBundleId="com.cepstarter"
 ExtensionBundleVersion="0.1.0"
 Version="6.0"
-ExtensionBundleName="Tutorial 1"
+ExtensionBundleName="cepstarter"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Author>Code and Motion</Author>
 	<ExtensionList>
@@ -35,7 +35,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		</Lifecycle>
 		<UI>
 			<Type>Panel</Type>
-			<Menu>CEP Extension Starter</Menu>
+			<Menu>cepstarter</Menu>
 			<Geometry>
 				<Size>
 					<Height>300</Height>

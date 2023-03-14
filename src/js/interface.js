@@ -1,5 +1,6 @@
 var CSLibrary = new CSInterface();
 
 export function applyExpression() {
-	CSLibrary.evalScript('addExpression("loopOut();")');
+	var expression = document.querySelector('#expressionInput').value;
+	CSLibrary.evalScript(`addExpression("${expression}")`);
 }
